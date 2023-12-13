@@ -1,0 +1,46 @@
+{
+  "sitetitle": "NoseJS",
+  "tagline":"Get a head by a NoseJS!",
+	"palette": "pistachiocream",
+  "theme": "trollfell",
+
+	"themeoptions": {
+		"banner_image": "",
+		"site_image": ""
+	},
+
+	"modules": ["markdown","html","text","rss","chaoshex","enigmagick"],
+
+	"firstpage": {"type": "html", "args": ["nosejs.html"]},
+
+	"menu": [
+    {"label": "NoseJS", "type": "html", "args": ["nosejs.html"]},
+    {"label": "Markdown", "type": "markdown", "args": ["markdown.md"]},
+    {"label": "Files", "type": "text", "args": ["markdown.md"]},
+    {"label": "ChaosHex", "type": "chaoshex", "args": [""]},
+    {"label": "EnigMagick", "type": "enigmagick", "args": [""]},
+    {"label": "RSS Feed", "type": "rss", "args": {"feed": "blahaj"}}
+  ],
+
+	"socialmenu": {
+		"github": "https://github.com/widmoinc/nosejs/",
+		"linkedin": "",
+		"twitter": "",
+		"facebook": "",
+		"reddit": "",
+		"stackoverflow": "",
+		"link_url": "",
+		"email": "",
+		"fediverse": "@toni@blahaj.zone"
+	},
+
+	"moduleoptions": [
+		{}
+	],
+
+	"data_sources": {
+		"blahaj": ["rss", "https://blahaj.zone/@toni.rss"]
+	},
+
+	"dateformat": {"locale": "en-US", "options":{ "weekday": "long", "year": "numeric", "month": "long", "day": "numeric" }}
+}

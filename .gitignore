@@ -1,0 +1,6 @@
+.git
+.git/*
+*.DS_Store
+*.sw?
+content/test/*
+content/test

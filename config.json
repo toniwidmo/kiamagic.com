@@ -1,0 +1,31 @@
+{
+  "sitetitle": "Blockpress.me",
+  "tagline":"The API driven disembodied CMS",
+	"palette": "pistachiocream",
+  "theme": "metaverse",
+
+	"themeoptions": {
+		"banner_image": "",
+		"site_image": ""
+	},
+
+	"modules": ["html"],
+
+	"firstpage": {"type": "html", "args": ["default/welcome_to_nosejs.html"]},
+
+	"menu": [
+    {"label": "Home", "type": "html", "args": "default/welcome_to_nosejs.html"}
+  ],
+
+	"socialmenu": {
+		"github": "https://github.com/widmoinc/nosejs/",
+		"linkedin": "",
+		"twitter": "",
+		"facebook": "",
+		"stackoverflow": "",
+		"link_url": "https://widmoinc.github.io/nosejs/",
+		"email": ""
+	},
+
+	"dateformat": {"locale": "en-US", "options":{ "weekday": "long", "year": "numeric", "month": "long", "day": "numeric" }}
+}
