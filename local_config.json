@@ -1,29 +1,26 @@
 {
-  "sitetitle": "NoseJS",
-  "tagline":"Get a head by a NoseJS!",
-	"palette": "pistachiocream",
-  "theme": "trollfell",
+  "sitetitle": "KIA",
+  "tagline":"KIA Invisible Agents",
+	"palette": "kia2023",
+  "theme": "kia2023",
 
 	"themeoptions": {
 		"banner_image": "",
 		"site_image": ""
 	},
 
-	"modules": ["markdown","html","text","rss","chaoshex","enigmagick"],
+	"modules": ["html"],
 
-	"firstpage": {"type": "html", "args": ["nosejs.html"]},
+	"firstpage": {"type": "html", "args": ["kia.html"]},
 
 	"menu": [
-    {"label": "NoseJS", "type": "html", "args": ["nosejs.html"]},
-    {"label": "Markdown", "type": "markdown", "args": ["markdown.md"]},
-    {"label": "Files", "type": "text", "args": ["markdown.md"]},
-    {"label": "ChaosHex", "type": "chaoshex", "args": [""]},
-    {"label": "EnigMagick", "type": "enigmagick", "args": [""]},
-    {"label": "RSS Feed", "type": "rss", "args": {"feed": "blahaj"}}
+    {"label": "KIA Invisible Agents", "type": "html", "args": ["kia.html"]},
+    {"label": "GodForms", "type": "html", "args": ["rituals.html"]},
+    {"label": "GodForms", "type": "html", "args": ["godforms.html"]}
   ],
 
 	"socialmenu": {
-		"github": "https://github.com/widmoinc/nosejs/",
+		"github": "",
 		"linkedin": "",
 		"twitter": "",
 		"facebook": "",
@@ -31,7 +28,7 @@
 		"stackoverflow": "",
 		"link_url": "",
 		"email": "",
-		"fediverse": "@toni@blahaj.zone"
+		"fediverse": ""
 	},
 
 	"moduleoptions": [
@@ -39,7 +36,7 @@
 	],
 
 	"data_sources": {
-		"blahaj": ["rss", "https://blahaj.zone/@toni.rss"]
+		"blahaj": ["rss", ""]
 	},
 
 	"dateformat": {"locale": "en-US", "options":{ "weekday": "long", "year": "numeric", "month": "long", "day": "numeric" }}
