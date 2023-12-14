@@ -251,6 +251,15 @@ header{
     margin: auto;
 	}
 
+
+	  /* Enclosure Styles */
+
+	  #contentArea .enclosure1, .enclosure2, .enclosure3{
+		border-radius: 1em;
+		padding: 1em;
+		margin: 1em;
+	  }
+
 	/*Footer styles*/
 
 footer{
