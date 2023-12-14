@@ -212,7 +212,6 @@ div#banner-gradient {
 .menu2 div { background-color: #00ee00;}
 
   /* content area styles*/
-
 #contentArea{
 	color: #00ee00;
 	border-color: #00ee00;
@@ -224,9 +223,9 @@ color: #00ee00;
 text-shadow: 1px 1px 5px #beb19f;
 }
 
-#contentArea h2 { color:#00ee00;}
+#contentArea h2 { color:#66ee66;}
 
-#contentArea h3 { color: #00ee00;}
+#contentArea h3 { color: #33ee33;}
 
 #contentArea p {color: #00ee00;}
 
