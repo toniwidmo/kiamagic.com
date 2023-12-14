@@ -15,7 +15,7 @@
 
 	"menu": [
     {"label": "KIA Invisible Agents", "type": "html", "args": ["kia.html"]},
-    {"label": "GodForms", "type": "html", "args": ["rituals.html"]},
+    {"label": "Rituals", "type": "html", "args": ["rituals.html"]},
     {"label": "GodForms", "type": "html", "args": ["godforms.html"]}
   ],
 
