@@ -28,7 +28,7 @@ var noun_people_array = ['of the','collected by','found by','hoarding','research
 var noun_deity_array = ['of','collected by','found by','lost by','given by','gift of','revealed by','blessed by','blessed of','beloved of'];
 
 var deity_noun_array = ['revealing','with','giving','sharing'];
-var deity_people_array = ['teaching','inspiring','possessing','illuminating','watching over','guiding','walking with'];
+var deity_people_array = ['teaching','inspiring','possessing','illuminating','watching over','guiding','walking with','blessing'];
 var deity_deity_array = ['revealing','with','teaching','inspiring','illuminating','guiding','walking with','dancing with','in sexual union with','fighting','in conflict with','battling','loving','learning from','working with','playing with','killing','birthing','leading to','hiding','consuming','devouring','spewing forth','teaching about'];
 
 var drug_people_array = ['taking','sacrament of','shared by','given by'];
@@ -39,12 +39,9 @@ function random_array_item(items) {
     return item;
 }
 
-
-
-
-function random_title() {
-    console.log("random_title()");
-	let title_pattern = Math.floor(Math.random() * 40);
+function kia2023_random_title() {
+    console.log("kia2023_random_title()");
+	let title_pattern = Math.floor(Math.random() * 65);
 
     switch(title_pattern) {
         case 0:
@@ -138,110 +135,180 @@ function random_title() {
             return random_array_item(k_people_array)+' '+random_array_item(people_drink_array)+' '+random_array_item(i_adjective_array)+' '+' '+random_array_item(a_drink_array);
             break; 
         case 30:
-            return random_array_item(k_people_array)+' '+random_array_item(people_drink_array)+' '+random_array_item(i_adjective_array)+' '+' '+random_array_item(a_drink_array);
+            return random_array_item(k_people_array)+' '+random_array_item(people_noun_array)+' '+random_array_item(i_people_array)+' '+random_array_item(people_noun_array)+' '+random_array_item(a_noun_array);
             break; 
-
+        case 31:
+            return random_array_item(k_people_array)+' '+random_array_item(people_noun_array)+' '+random_array_item(i_people_array)+' '+random_array_item(people_noun_array)+' '+random_array_item(a_people_array);
+            break; 
+        case 32:
+            return random_array_item(k_people_array)+' '+random_array_item(people_noun_array)+' '+random_array_item(i_people_array)+' '+random_array_item(people_deity_array)+' '+random_array_item(a_deity_array);
+            break;
+		case 33:
+            return random_array_item(k_people_array)+' '+random_array_item(people_noun_array)+' '+random_array_item(i_people_array)+' '+random_array_item(people_drug_array)+' '+random_array_item(a_drug_array);
+            break;
+		case 34:
+            return random_array_item(k_people_array)+' '+random_array_item(people_noun_array)+' '+random_array_item(i_people_array)+' '+random_array_item(people_drink_array)+' '+random_array_item(a_drink_array);
+            break;
+		case 35:
+            return random_array_item(k_people_array)+' '+random_array_item(people_noun_array)+' '+random_array_item(i_noun_array)+' '+random_array_item(noun_noun_array)+' '+random_array_item(a_noun_array);
+            break;
+		case 36:
+            return random_array_item(k_people_array)+' '+random_array_item(people_noun_array)+' '+random_array_item(i_noun_array)+' '+random_array_item(noun_people_array)+' '+random_array_item(a_people_array);
+            break;
+		case 37:
+            return random_array_item(k_people_array)+' '+random_array_item(people_deity_array)+' '+random_array_item(i_noun_array)+' '+random_array_item(noun_deity_array)+' '+random_array_item(a_deity_array);
+            break;
+		case 38:
+            return random_array_item(k_people_array)+' '+random_array_item(people_noun_array)+' '+random_array_item(i_noun_array)+' '+random_array_item(people_deity_array)+' '+random_array_item(a_deity_array);
+            break;
+		case 39:
+            return random_array_item(k_people_array)+' '+random_array_item(people_noun_array)+' '+random_array_item(i_noun_array)+' '+random_array_item(noun_noun_array)+' '+random_array_item(a_drug_array);
+            break;
+		case 40:
+			return random_array_item(k_people_array)+' '+random_array_item(people_noun_array)+' '+random_array_item(i_noun_array)+' '+random_array_item(noun_noun_array)+' '+random_array_item(a_drink_array);
+			break;
+		case 41:
+            return random_array_item(k_people_array)+' '+random_array_item(i_verb_array)+' '+random_array_item(a_noun_array);
+            break;
+		case 42:
+            return random_array_item(k_people_array)+' '+random_array_item(i_verb_array)+' '+random_array_item(a_people_array);
+            break;
+		case 43:
+            return random_array_item(k_people_array)+' '+random_array_item(i_verb_array)+' '+random_array_item(a_deity_array);
+            break;
+		case 44:
+            return random_array_item(k_people_array)+' '+random_array_item(i_verb_array)+' '+random_array_item(a_drug_array);
+            break;
+		case 45:
+            return random_array_item(k_people_array)+' '+random_array_item(i_verb_array)+' '+random_array_item(a_drink_array);
+            break;
+		case 46:
+            return random_array_item(k_people_array)+' '+random_array_item(people_deity_array)+' '+random_array_item(i_deity_array)+' '+random_array_item(deity_noun_array)+' '+random_array_item(a_noun_array);
+            break;
+		case 47:
+            return random_array_item(k_people_array)+' '+random_array_item(people_deity_array)+' '+random_array_item(i_deity_array)+' '+random_array_item(deity_people_array)+' '+random_array_item(a_people_array);
+            break;
+		case 48:
+            return random_array_item(k_people_array)+' '+random_array_item(people_deity_array)+' '+random_array_item(i_deity_array)+' '+random_array_item(deity_deity_array)+' '+random_array_item(a_deity_array);
+            break;
+		case 49:
+            return random_array_item(k_people_array)+' '+random_array_item(people_deity_array)+' '+random_array_item(i_deity_array)+' '+random_array_item(people_drug_array)+' '+random_array_item(a_drug_array);
+            break;
+		case 50:
+            return random_array_item(k_people_array)+' '+random_array_item(people_deity_array)+' '+random_array_item(i_deity_array)+' '+random_array_item(people_drink_array)+' '+random_array_item(a_drink_array);
+            break;
+		case 51:
+            return random_array_item(k_people_array)+' '+random_array_item(people_drug_array)+' '+random_array_item(i_drug_array)+' '+random_array_item(noun_noun_array)+' '+random_array_item(a_noun_array);
+            break;
+		case 52:
+            return random_array_item(k_people_array)+' '+random_array_item(people_drug_array)+' '+random_array_item(i_drug_array)+' '+random_array_item(drug_people_array)+' '+random_array_item(a_people_array);
+            break;
+		case 53:
+            return random_array_item(k_people_array)+' '+random_array_item(people_drug_array)+' '+random_array_item(i_drug_array)+' '+random_array_item(drug_people_array)+' '+random_array_item(a_deity_array);
+            break;
+		case 54:
+			return random_array_item(k_people_array)+' '+random_array_item(people_drug_array)+' '+random_array_item(i_drug_array)+' '+random_array_item(noun_noun_array)+' '+random_array_item(a_drug_array);
+			break;
+		case 55:
+			return random_array_item(k_people_array)+' '+random_array_item(people_drug_array)+' '+random_array_item(i_drug_array)+' '+random_array_item(noun_noun_array)+' '+random_array_item(a_drink_array);
+			break;
+		case 56:
+			return random_array_item(k_deity_array)+' '+random_array_item(deity_noun_array)+' '+random_array_item(i_adjective_array)+' '+random_array_item(a_noun_array);
+			break;
+		case 57:
+			return random_array_item(k_deity_array)+' '+random_array_item(deity_people_array)+' '+random_array_item(i_adjective_array)+' '+random_array_item(a_people_array);
+			break;
+		case 58:
+			return random_array_item(k_deity_array)+' '+random_array_item(deity_deity_array)+' '+random_array_item(i_adjective_array)+' '+random_array_item(a_deity_array);
+			break;
+		case 59:
+			return random_array_item(k_deity_array)+' '+random_array_item(deity_noun_array)+' '+random_array_item(i_adjective_array)+' '+random_array_item(a_drug_array);
+			break;
+		case 60:
+			return random_array_item(k_deity_array)+' '+random_array_item(people_drug_array)+' '+random_array_item(i_adjective_array)+' '+random_array_item(a_drug_array);
+			break;
+		case 61:
+			return random_array_item(k_deity_array)+' '+random_array_item(deity_noun_array)+' '+random_array_item(i_adjective_array)+' '+random_array_item(a_drink_array);
+			break;
+		case 62:
+			return random_array_item(k_deity_array)+' '+random_array_item(people_drink_array)+' '+random_array_item(i_adjective_array)+' '+random_array_item(a_drink_array);
+			break;
             /*    
-					
-					case 30:
-					// People People Noun
-						$dividers = $this->people_noun_array;
-						$divider = $dividers[array_rand($dividers)];
-						$divider2s = $this->people_noun_array;
-						$divider2 = $divider2s[array_rand($divider2s)];
-						$this->title = $this->Ks->people.' '.$divider.' '.$this->Is->people.' '.$divider2.' '.$this->A_s->noun;
-						break;
-					case 31:
-					// People People People
-						$dividers = $this->people_noun_array;
-						$divider = $dividers[array_rand($dividers)];
-						$divider2s = $this->people_noun_array;
-						$divider2 = $divider2s[array_rand($divider2s)];
-						$this->title = $this->Ks->people.' '.$divider.' '.$this->Is->people.' '.$divider2.' '.$this->A_s->people;
-						break;
-					case 32:
-					// People People Deity
-						$dividers = $this->people_noun_array;
-						$divider = $dividers[array_rand($dividers)];
-						$divider2s = $this->people_deity_array;
-						$divider2 = $divider2s[array_rand($divider2s)];
-						$this->title = $this->Ks->people.' '.$divider.' '.$this->Is->people.' '.$divider2.' '.$this->A_s->deity;
-						break;
-					case 33:
-					// People People Drug
-						$dividers = $this->people_noun_array;
-						$divider = $dividers[array_rand($dividers)];
-						$divider2s = $this->people_drug_array;
-						$divider2 = $divider2s[array_rand($divider2s)];
-						$this->title = $this->Ks->people.' '.$divider.' '.$this->Is->people.' '.$divider2.' '.$this->A_s->drug;
-						break;
-					case 34:
-					// People People Drink
-						$dividers = $this->people_noun_array;
-						$divider = $dividers[array_rand($dividers)];
-						$divider2s = $this->people_drink_array;
-						$divider2 = $divider2s[array_rand($divider2s)];
-						$this->title = $this->Ks->people.' '.$divider.' '.$this->Is->people.' '.$divider2.' '.$this->A_s->drink;
-						break;
+					// Deity People Noun
+					// Deity People People
+					// Deity People Deity
+					// Deity People Drug
+					// Deity People Drink
 
-					// People Noun Noun
-					case 35:
-						$dividers = $this->people_noun_array;
-						$divider = $dividers[array_rand($dividers)];
-						$divider2s = $this->people_noun_array;
-						$divider2 = $divider2s[array_rand($divider2s)];
-						$this->title = $this->Ks->people.' '.$divider.' '.$this->Is->noun.' '.$divider2.' '.$this->A_s->noun;
-						break;
-					// People Noun People
-					case 36:
-						$dividers = $this->people_noun_array;
-						$divider = $dividers[array_rand($dividers)];
-						$divider2s = $this->people_noun_array;
-						$divider2 = $divider2s[array_rand($divider2s)];
-						$this->title = $this->Ks->people.' '.$divider.' '.$this->Is->noun.' '.$divider2.' '.$this->A_s->people;
-						break;
-					// People Noun Deity 1
-					case 37:
-						$dividers = $this->people_deity_array;
-						$divider = $dividers[array_rand($dividers)];
-						$divider2s = $this->noun_deity_array;
-						$divider2 = $divider2s[array_rand($divider2s)];
-						$this->title = $this->Ks->people.' '.$divider.' '.$this->Is->noun.' '.$divider2.' '.$this->A_s->deity;
-						break;
-					// People Noun Deity 2
-					case 38:
-						$dividers = $this->people_noun_array;
-						$divider = $dividers[array_rand($dividers)];
-						$divider2s = $this->people_deity_array;
-						$divider2 = $divider2s[array_rand($divider2s)];
-						$this->title = $this->Ks->people.' '.$divider.' '.$this->Is->noun.' '.$divider2.' '.$this->A_s->deity;
-						break;
-					// People Noun Drug
-					case 39:
-						$dividers = $this->people_noun_array;
-						$divider = $dividers[array_rand($dividers)];
-						$divider2s = $this->noun_noun_array;
-						$divider2 = $divider2s[array_rand($divider2s)];
-						$this->title = $this->Ks->people.' '.$divider.' '.$this->Is->noun.' '.$divider2.' '.$this->A_s->drug;
-						break;
-					// People Noun Drink
-					case 40:
-						$dividers = $this->people_noun_array;
-						$divider = $dividers[array_rand($dividers)];
-						$divider2s = $this->noun_noun_array;
-						$divider2 = $divider2s[array_rand($divider2s)];
-						$this->title = $this->Ks->people.' '.$divider.' '.$this->Is->noun.' '.$divider2.' '.$this->A_s->drink;
-						break; */
+					// Deity Noun Noun
+					// Deity Noun People
+					// Deity Noun Deity
+					// Deity Noun Drug
+					// Deity Noun Drink
+
+					// Deity Verb Noun
+					// Deity Verb People
+					// Deity Verb Deity
+					// Deity Verb Drug
+					// Deity Verb Drink
+
+					// Deity Deity Noun
+					// Deity Deity People
+					// Deity Deity Deity
+					// Deity Deity Drug
+					// Deity Deity Drink
+
+					// Deity Drug Noun
+					// Deity Drug People
+					// Deity Drug Deity
+					// Deity Drug Drug
+					// Deity Drug Drink
+
+					// Noun Adj Noun
+					// Noun Adj People
+					// Noun Adj Deity
+					// Noun Adj Drug
+					// Noun Adj Drink
+
+					// Noun People Noun
+					// Noun People People
+					// Noun People Deity
+					// Noun People Drug
+					// Noun People Drink
+
+					// Noun Noun Noun
+					// Noun Noun People
+					// Noun Noun Deity
+					// Noun Noun Drug
+					// Noun Noun Drink
+
+					// Noun Verb Noun
+					// Noun Verb People
+					// Noun Verb Deity
+					// Noun Verb Drug
+					// Noun Verb Drink
+
+					// Noun Deity Noun
+					// Noun Deity People
+					// Noun Deity Deity
+					// Noun Deity Drug
+					// Noun Deity Drink
+
+					// Noun Drug Noun
+					// Noun Drug People
+					// Noun Drug Deity
+					// Noun Drug Drug
+					// Noun Drug Drink */
         default:
             return 'KIA Invisible Agents';
     }
 }
 
 function kia2023_changeTitle() {
-    console.log("kia2023_changeTitle()");
-    let newTitle = random_title();
-    console.log(newTitle);
-    console.log($("#sitetitle").html());
+    //console.log("kia2023_changeTitle()");
+    let newTitle = kia2023_random_title();
+    //console.log(newTitle);
+    //console.log($("#sitetitle").html());
     $("#sitetitle").html("<h1>"+newTitle+"</h1>");
 
     setTimeout(function () {
