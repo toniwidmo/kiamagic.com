@@ -9,14 +9,15 @@
 		"site_image": ""
 	},
 
-	"modules": ["html"],
+	"modules": ["html","kiaspeaks"],
 
 	"firstpage": {"type": "html", "args": ["kia.html"]},
 
 	"menu": [
     {"label": "KIA Invisible Agents", "type": "html", "args": ["kia.html"]},
     {"label": "Rituals", "type": "html", "args": ["rituals.html"]},
-    {"label": "GodForms", "type": "html", "args": ["godforms.html"]}
+    {"label": "GodForms", "type": "html", "args": ["godforms.html"]},
+    {"label": "KIA Speaks", "type": "kiaspeaks", "args": ""}
   ],
 
 	"socialmenu": {
