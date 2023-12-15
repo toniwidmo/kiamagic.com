@@ -41,7 +41,7 @@ function random_array_item(items) {
 
 function kia2023_random_title() {
     console.log("kia2023_random_title()");
-	let title_pattern = Math.floor(Math.random() * 65);
+	let title_pattern = Math.floor(Math.random() * 75);
 
     switch(title_pattern) {
         case 0:
@@ -233,12 +233,22 @@ function kia2023_random_title() {
 		case 62:
 			return random_array_item(k_deity_array)+' '+random_array_item(people_drink_array)+' '+random_array_item(i_adjective_array)+' '+random_array_item(a_drink_array);
 			break;
+		case 63:
+			return random_array_item(k_deity_array)+' '+random_array_item(deity_people_array)+' '+random_array_item(i_people_array)+' '+random_array_item(people_noun_array)+' '+random_array_item(a_noun_array);
+			break; 
+		case 64:
+			return random_array_item(k_deity_array)+' '+random_array_item(deity_people_array)+' '+random_array_item(i_people_array)+' '+random_array_item(people_people_array)+' '+random_array_item(a_people_array);
+			break; 
+		case 65:
+			return random_array_item(k_deity_array)+' '+random_array_item(deity_people_array)+' '+random_array_item(i_people_array)+' '+random_array_item(people_deity_array)+' '+random_array_item(a_deity_array);
+			break; 
+		case 66:
+			return random_array_item(k_deity_array)+' '+random_array_item(deity_people_array)+' '+random_array_item(i_people_array)+' '+random_array_item(people_drug_array)+' '+random_array_item(a_drug_array);
+			break; 
+		case 67:
+			return random_array_item(k_deity_array)+' '+random_array_item(deity_people_array)+' '+random_array_item(i_people_array)+' '+random_array_item(people_drink_array)+' '+random_array_item(a_drink_array);
+			break; 
             /*    
-					// Deity People Noun
-					// Deity People People
-					// Deity People Deity
-					// Deity People Drug
-					// Deity People Drink
 
 					// Deity Noun Noun
 					// Deity Noun People
