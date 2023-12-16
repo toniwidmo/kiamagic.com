@@ -73,22 +73,21 @@ hr {
 
 .enclosure1{
   background-color: #000;
-	--border-color: #00ee00;
-  --color: #1e251d;
+	color: #9f9;
 }
 
 /* Enclosure2 Styles */
 
 .enclosure2{
-	--border-color: #00dd00;
 	background-color: #131313;
+	color: #ff9;
 }
 
 /* Enclosure3 Styles */
 
 .enclosure3{
- -- border-color: #00cc00;
   background-color: #161616;
+	color: #9ff;
 }
 
 /* Pattern Classes
