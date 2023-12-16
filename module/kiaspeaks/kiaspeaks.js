@@ -188,6 +188,60 @@ var kiaspeaks_lines = [
 'Day my servants will slay me.',
 "Hawk's secret word will slay me.",
 "Hawk's princes shall not die.",
+"It is a mortals tragedy that they can never accept this.",
+"According to Hesiod, Eros arrose out of Chaos.",
+"Everyone runs towards the glittering metal structure as the tentacles slash at them from the massive shells on the side of the dome.",
+"The forn in which spirit chooses to manifest on any given occassion (as human, humanoid or animal creature, for example) is itself a sacred mystery.",
+"What if there is no hell or they don't want us there?",
+"So we lay in a black embrace, the seed is sown in a holy place.",
+"Grandmother Moon lights your way in the dark, but she does not make the sun rise.",
+"We can't stop here!",
+"This is bat country!",
+"What you should always be imagining is you at your most powerful.",
+"Enjoy the pain my friend.",
+"Seek the brothers of darkness.",
+"Batteries not included.",
+"I am he who has been born as the first son of the divine Anu.",
+"Nothing has being, everything has value",
+"How do you define real?",
+"This god also threw an apple at me.",
+"When you gaze long into the abyss, the abyss gazes into you.",
+"Must I be forever solving the changing symbolism of the wretched morality called 'I'?",
+"I was pretty sure I could become a better magician by doing it, and I don't think I'm wrong, yet.",
+"Go to knowledge as you would go to war; wide awake, with fear, with respect and with absolute assurance.",
+"Abandon all paths.",
+"Follow the white rabbit...",
+"Within the eye lies wisdom.",
+"Lets make a deal.",
+"I dare you to do better.",
+"Work to better ourselves and the rest of humanity.",
+"We are searching, not just for answers to our questions, but for new questions.",
+"Logic is the beginning of wisdom, not the end.",
+"The real violence, the violence I realized was unforgivable, is the violence we do to ourselves when we're too afraid to be who we really are.",
+"I have a feeling I'm going to have a really good day today.",
+"Our existence depends on sheer implausibility.",
+"I was suddenly struck by her beauty and the knowledge that all beauty is temporary.",
+"Death and Decay haunt every breath we take.",
+"Impossibility is a kiss away from reality.",
+"Who can say if it is we who make the choice or the choice that makes us?",
+"It's not the drugs that make the drug addict, it's the need to escape reality.",
+"We make choices and life has a way of making us pay for them.",
+"Life holds onto you and sometimes if you're lucky, it finds a way to push back into your heart.",
+"At a certain point, I realized there's a huge difference between what we work for and what we live for.",
+"Sometimes… you make a mistake. You've got two choices: you live with it, or you fix it.",
+"I love you, that's why you can't give up.",
+"Believing in something doesn't make it so.",
+"Art is love made public.",
+"I sometimes forget that life's not just full of surprises, It's also full of gifts.",
+"Nothing good ever happens when people care more about our differences than the things we have in common.",
+"The future that I hope for is the same as yours, a future where our children grow up never knowing love as a wall, but only as a bridge.",
+"Art, like life, is full of risks.",
+"Nothing's more terrifying than a dream come true.",
+"If your dream isn't worth the risk, what is?",
+"Choice is less about what happens than it is about how we deal with it.",
+"The improbable unfolding of recent events has led me to consider that no one thing is one thing only.",
+"It is in this unfamiliar realm we find new possibilities.",
+""
 ];
 
 function kiaspeaks_random_array_item(items) {
@@ -228,7 +282,7 @@ function loadKIASpeaksTemplates() {
 		// Else use default template
 		$.ajax("./module/kiaspeaks/kiaspeaks_query.html").done(kiaspeaksQueryTemplateLoaded);
 	});
-	var theme_template = "./theme/"+config.theme+"/kiaspeaks.html";
+	var theme_template = "./theme/"+config.theme+"/kiaspeaks_answer.html";
 	$.ajax(theme_template).done(kiaspeaksAnswerTemplateLoaded).fail(function(){
 		// Else use default template
 		$.ajax("./module/kiaspeaks/kiaspeaks_answer.html").done(kiaspeaksAnswerTemplateLoaded);
