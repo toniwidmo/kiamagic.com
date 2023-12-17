@@ -378,7 +378,31 @@ var kiaspeaks_lines = [
 "She was already learning that if you ignore the rules people will, half the time, quietly rewrite them so that they don't apply to you.",
 "I'd rather be a rising ape than a falling angel.",
 "Human beings make life so interesting.",
-"Do you know, that in a universe so full of wonders, they have managed to invent boredom."
+"Do you know, that in a universe so full of wonders, they have managed to invent boredom.",
+"The presence of those seeking the truth is infinitely to be preferred to the presence of those who think they've found it.",
+"Inside every old person is a young person wondering what happened.",
+"If there was anything that depressed him more than his own cynicism, it was that quite often it still wasn't as cynical as real life.",
+"The thing about words is that meanings can twist just like a snake, and if you want to find snakes look for them behind words that have changed their meaning.",
+"This isn't life in the fast lane, it's life in the oncoming traffic.",
+"Did I do anything last night that suggested I was sane?",
+"Do you think it's possible for an entire nation to be insane?",
+"Always be wary of any helpful item that weighs less than its operating manual.",
+"Chaos is found in greatest abundance wherever order is being sought, and it always defeats order, because it is better organized.",
+"No one is actually dead until the ripples they cause in the world die away...",
+"The enemy isn't men, or women, it's bloody stupid people and no one has the right to be stupid.",
+"Even if it's not your fault, it's your responsibility.",
+"Sometimes it's better to light a flamethrower than curse the darkness.",
+"The trouble is you can shut your eyes but you can't shut your mind.",
+"No, what he didn't like about heroes was that they were usually suicidally gloomy when sober and homicidally insane when drunk.",
+"You can take a billion trillion tons of flaming matter, a furnace of unimaginable strength, and turn it into a little song for children!",
+"You build little worlds, little stories, little shells around your minds, and that keeps infinity at bay and allows you to wake up in the morning without screaming!",
+"And someone has to speak up for them as has no voices.",
+"A lie can run round the world before the truth has got its boots on.",
+"The truth may be out there, but the lies are inside your head.",
+"Knowing things is magical, if other people don't know them.",
+"It is well known that a vital ingredient of success is not knowing that what you're attempting can't be done.",
+"They accept evil not because they say yes, but because they don't say no.",
+""
 ];
 
 function kiaspeaks_random_array_item(items) {
