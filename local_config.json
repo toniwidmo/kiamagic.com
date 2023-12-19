@@ -9,7 +9,7 @@
 		"site_image": ""
 	},
 
-	"modules": ["html","kiaspeaks"],
+	"modules": ["html","kiaspeaks","kialitany"],
 
 	"firstpage": {"type": "html", "args": ["kia.html"]},
 
@@ -17,7 +17,8 @@
     {"label": "KIA Invisible Agents", "type": "html", "args": ["kia.html"]},
     {"label": "Rituals", "type": "html", "args": ["rituals.html"]},
     {"label": "GodForms", "type": "html", "args": ["godforms.html"]},
-    {"label": "KIA Speaks", "type": "kiaspeaks", "args": [""]}
+    {"label": "KIA Speaks", "type": "kiaspeaks", "args": [""]},
+    {"label": "KIA Litany", "type": "kialitany", "args": [""]}
   ],
 
 	"socialmenu": {

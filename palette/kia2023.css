@@ -32,6 +32,7 @@ header {
 }
 
 
+
 h1 {
   color:#33ee33;
   text-shadow: 1px 1px 5px #28281e, 2px 2px 10px  #96834c;
@@ -168,25 +169,24 @@ div#banner-gradient {
 } */
 
 /* Menu Styles*/
-
 .menu1 span a {
-  background-color:#161616;
-	color:#00dddd;
+  background:#33a;
+  color:#ddd;
 }
 
 .menu1 span a:hover {
-	background-color:#00dddd;
-	color:#eeeeee;
+  background:#44b;
+  color:#fff;
 }
 
 .menu1 span a:focus {
-	background-color:#00dddd;
-	color:#eeeeee;
+  color:#fff;
+  background:#111;
 }
 
 .menu1 span a:active {
-	background-color:#00eeee;
-	color:#111111;
+  background:#229;
+  color:#fff;
 }
 
 /*Sidebar styles*/
@@ -248,3 +248,4 @@ div.socialmenu.icon img{
 div.socialmenu.icon img:hover{
    filter:hue-rotate(290deg) brightness(190%) blur(0px);
 }
+

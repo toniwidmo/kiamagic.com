@@ -361,3 +361,18 @@ footer{
 		border-radius: 0;
 	}
 }
+
+
+/* KIA Litany Styles */
+#kialitany pre {
+  font-size: 1.5em;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  text-align: center;
+}
+
+#kialitany #kialitany_story pre {
+	font-size: 1.2em;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	text-align: left;
+	word-wrap: normal;
+  }
