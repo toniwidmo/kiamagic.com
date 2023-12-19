@@ -237,7 +237,7 @@ function kia2023_random_title() {
 			return random_array_item(k_deity_array)+' '+random_array_item(deity_people_array)+' '+random_array_item(i_people_array)+' '+random_array_item(people_noun_array)+' '+random_array_item(a_noun_array);
 			break; 
 		case 64:
-			return random_array_item(k_deity_array)+' '+random_array_item(deity_people_array)+' '+random_array_item(i_people_array)+' '+random_array_item(people_people_array)+' '+random_array_item(a_people_array);
+			return random_array_item(k_deity_array)+' '+random_array_item(deity_people_array)+' '+random_array_item(i_people_array)+' '+random_array_item(people_noun_array)+' '+random_array_item(a_people_array);
 			break; 
 		case 65:
 			return random_array_item(k_deity_array)+' '+random_array_item(deity_people_array)+' '+random_array_item(i_people_array)+' '+random_array_item(people_deity_array)+' '+random_array_item(a_deity_array);
