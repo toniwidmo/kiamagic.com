@@ -436,7 +436,8 @@ var kiaspeaks_lines = [
 "The longer one is alone, the easier to hear the song of the earth.",
 "We have sought to disperse power, to set men and women free.",
 "Encounters with death and danger are only adventures to the survivors.",
-"What the world calls sanity has led us to the present planetary crisis... and insanity is the only viable alternative."
+"What the world calls sanity has led us to the present planetary crisis... and insanity is the only viable alternative.",
+"Practicing self-kindness strengthens your ability to love yourself and others"
 ];
 
 function kiaspeaks_random_array_item(items) {
