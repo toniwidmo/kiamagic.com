@@ -36,6 +36,15 @@ function kiaspeaks_permlink(permlink) {
 	kiaspeaks_load(permlink);
 }
 
+function kiaspeaks_make_paragraph() {
+	var reply = kiaspeaks_random_array_item(kiaspeaks_lines);
+
+	var len = Math.floor(Math.random() * 5);
+	for(i=0; i<len; i++) {
+		reply += " "+kiaspeaks_random_array_item(kiaspeaks_lines);
+	}
+	return reply;
+}
 
 /** KIA Speaks Make Query Functions */
 function kiaspeaks_make_query(e) {
@@ -46,7 +55,8 @@ function kiaspeaks_make_query(e) {
 
 	$('#kiaspeaks_chat').append(query_html);
 
-	let reply = kiaspeaks_random_array_item(kiaspeaks_lines)+' '+kiaspeaks_random_array_item(kiaspeaks_lines)+' '+kiaspeaks_random_array_item(kiaspeaks_lines)+' '+kiaspeaks_random_array_item(kiaspeaks_lines)+' '+kiaspeaks_random_array_item(kiaspeaks_lines);
+	//let reply = kiaspeaks_random_array_item(kiaspeaks_lines)+' '+kiaspeaks_random_array_item(kiaspeaks_lines)+' '+kiaspeaks_random_array_item(kiaspeaks_lines)+' '+kiaspeaks_random_array_item(kiaspeaks_lines)+' '+kiaspeaks_random_array_item(kiaspeaks_lines);
+	let reply = kiaspeaks_make_paragraph();
 	let reply_html = kiaspeaks_answer_template;
 	reply_html = reply_html.replace(/{kiaspeaks_answer}/g,reply);
 	$('#kiaspeaks_chat').append(reply_html);
@@ -437,7 +447,60 @@ var kiaspeaks_lines = [
 "We have sought to disperse power, to set men and women free.",
 "Encounters with death and danger are only adventures to the survivors.",
 "What the world calls sanity has led us to the present planetary crisis... and insanity is the only viable alternative.",
-"Practicing self-kindness strengthens your ability to love yourself and others"
+"Practicing self-kindness strengthens your ability to love yourself and others",
+"If I can't dance to it, it's not my revolution.",
+"People have only as much liberty as they have the intelligence to want and the courage to take.",
+"Before we can forgive one another, we have to understand one another.",
+"The most violent element in society is ignorance.",
+"Free love? As if love is anything but free!",
+"Man has bought brains, but all the millions in the world have failed to buy love.",
+"Man has subdued bodies, but all the power on earth has been unable to subdue love.",
+"Man has conquered whole nations, but all his armies could not conquer love.",
+"Man has chained and fettered the spirit, but he has been utterly helpless before love.",
+"High on a throne, with all the splendor and pomp his gold can command, man is yet poor and desolate, if love passes him by.",
+"And if it stays, the poorest hovel is radiant with warmth, with life and color.",
+"Thus love has the magic power to make of a beggar a king.",
+"Yes, love is free; it can dwell in no other atmosphere.",
+"In freedom it gives itself unreservedly, abundantly, completely.",
+"All the laws on the statutes, all the courts in the universe, cannot tear it from the soil, once love has taken root.",
+"When we can't dream any longer we die.",
+"Every society has the criminals it deserves.",
+"Someone has said that it requires less mental effort to condemn than to think.",
+"Give us what belongs to us in peace, and if you don't give it to us in peace, we will take it by force.",
+"No great idea in its beginning can ever be within the law.",
+"The greater the mental charlatan, the more definite his insistence on the wickedness and weaknesses of human nature.",
+"Freedom, expansion, opportunity, and, above all, peace and repose, alone can teach us the real dominant factors of human nature and all its wonderful possibilities.",
+"Anarchism stands for a social order based on the free grouping of individuals for the purpose of producing real social wealth; an order that will guarantee to every human being free access to the earth and full enjoyment of the necessities of life, according to individual desires, tastes, and inclinations.",
+"This is not a wild fancy or an aberration of the mind.",
+"It is the conclusion arrived at by hosts of intellectual men and women the world over; a conclusion resulting from the close and studious observation of the tendencies of modern society: individual liberty and economic equality, the twin forces for the birth of what is fine and true in man.",
+"No one has yet realized the wealth of sympathy, the kindness, and generosity hidden in the soul of a child.",
+"If love does not know how to give and take without restrictions, it is not love, but a transaction that never fails to lay stress on a plus and a minus.",
+"The strongest bulwark of authority is uniformity; the least divergence from it is the greatest crime.",
+"It is certain.",
+"It is decidedly so.",
+"Without a doubt.",
+"Yes definitely.",
+"You may rely on it.",
+"As I see it, yes.",
+"Most likely.",
+"Outlook good.",
+"Yes.",
+"Signs point to yes.",
+"Reply hazy, try again.",
+"Ask again later.",
+"Better not tell you now.",
+"Better not tell you now.",
+"Concentrate and ask again.",
+"Don't count on it.",
+"My reply is no.",
+"My sources say no.",
+"Outlook not so good.",
+"Very doubtful.",
+"No.",
+"Maybe.",
+"The Good.",
+"The Bad.",
+"The Funny."
 ];
 
 function kiaspeaks_random_array_item(items) {
