@@ -55,8 +55,18 @@ function kiaspeaks_make_query(e) {
 
 	$('#kiaspeaks_chat').append(query_html);
 
+	// Make request
+	$.ajax({
+        type: 'GET',
+        url: "/rest/kiaspeaks.php"
+    }).done(kiaspeaks_processAnswer);
+}
+
+function kiaspeaks_processAnswer(answer) {
+	console.log("kia speaks response reached")
 	//let reply = kiaspeaks_random_array_item(kiaspeaks_lines)+' '+kiaspeaks_random_array_item(kiaspeaks_lines)+' '+kiaspeaks_random_array_item(kiaspeaks_lines)+' '+kiaspeaks_random_array_item(kiaspeaks_lines)+' '+kiaspeaks_random_array_item(kiaspeaks_lines);
-	let reply = kiaspeaks_make_paragraph();
+	//let reply = kiaspeaks_make_paragraph();
+	let reply = answer.response;
 	let reply_html = kiaspeaks_answer_template;
 	reply_html = reply_html.replace(/{kiaspeaks_answer}/g,reply);
 	$('#kiaspeaks_chat').append(reply_html);
