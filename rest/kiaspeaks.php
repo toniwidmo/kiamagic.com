@@ -9,12 +9,12 @@
     $all_lines = file('kiaspeaks.txt', FILE_IGNORE_NEW_LINES);
 
     // Number of sentences
-    $sentences = rand(1, 5);
+    $sentences = rand(2, 5);
 
     $rand_keys = array_rand($all_lines, $sentences);
 
     for ($i = 0; $i < $sentences; $i++) {
-        $response .= $all_lines[$rand_keys[$i]] . "\n";
+        $response .= $all_lines[$rand_keys[$i]] . " ";
     }
 
     //Get rid of new lines and weird white space...
