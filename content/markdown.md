@@ -3,8 +3,8 @@
 [//]: # (For example, when we use the **text** module to display )
 [//]: # (its contents rather than the **markdown** module.)
 
-# NoseJS supports markdown 
-NoseJS comes with a built in module for loading markdown and parsing it with the **showdown** library.
+# NosePHP supports markdown 
+NosePHP comes with a built in module for loading markdown and parsing it with the **showdown** library. The PHP backend, for the purpose of generating page previews when JavaScript is not available, uses the **Parsedown** library. Here are some examples of the kind of the kind of formating available in the NosePHP *markdown* module...
 
 # h1 Top Level Heading
 ## h2 Heading
@@ -103,6 +103,3 @@ Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
 
 ![Minion](https://octodex.github.com/images/minion.png)
 ![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
-
-
-

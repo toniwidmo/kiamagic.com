@@ -11,12 +11,9 @@ function markdown_display(markdown) {
 
   $('#contentArea').html(content);
 }
-function markdown_load(md_file) {
-  // File may or may not be contained in a JSON string and array. Strip uneeded characters
-  md_file = md_file.replace(/"/g,'');
-  md_file = md_file.replace(/\[/g,'');
-  md_file = md_file.replace(/\]/g,'');
-  
+function markdown_load(args) {
+  console.log("markdown_load()");
+
 	if(!markdown_libs_loaded) {
 		// Try to call menu again in 1/10 of a second.
 		setTimeout(function () {
@@ -24,6 +21,15 @@ function markdown_load(md_file) {
 		}, 100);
 		return null;
 	}
+
+  let md_file = args;
+  console.log(md_file);
+
+  // File may or may not be contained in a JSON string and array. Strip uneeded characters
+  md_file = md_file.replace(/"/g,'');
+  md_file = md_file.replace(/\[/g,'');
+  md_file = md_file.replace(/\]/g,'');
+  
 
   pushStateWithoutDuplicate(md_file, './?p=markdown/'+md_file);
   $.ajax({

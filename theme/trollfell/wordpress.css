@@ -1,0 +1,220 @@
+	/* WordPress Content Modules */
+	/* WordPress Profile */
+
+	#profile-image img {
+		display:block;
+		margin: 0 auto;
+		max-width: 100%;
+		border-radius: 50%;
+		margin-bottom: 1em;
+	}
+
+	#wordpress_profile{
+		text-align: center;
+		font-size: 1em;
+	}
+
+	#wordpress_profile h1{ text-align: center;}
+
+	#profile-image {
+		vertical-align: middle;
+		margin-top: 15px;
+	}
+
+	#profile-about {
+		max-width: 50%;
+		margin-right:auto;
+		margin-left:auto;
+	}
+
+	#profile-info {
+		max-width: 70%;
+		margin-right:auto;
+		margin-left:auto;
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+
+	#profile-info span{
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+
+	.wordpressitboard {
+		width:100%;
+		margin-left:auto;
+		margin-right: auto;
+	}
+	.wordpressitboard img {
+		vertical-align: top;
+		box-shadow: none !important;
+	}
+
+
+	/*wordpress Post*/
+
+	 #wordpress-post img{
+		/* width: 90%; This makes small images like wordpressitboard badges display real ugly */
+		max-width: 90%;
+		border-radius: 0;
+		padding: 0;
+		margin: 0;
+		border: none;
+	}
+
+	/* wordpress post comments */
+	#wordpress-post-comments {
+		border-top: 1px solid;
+		padding: 0.7em;
+	}
+
+	#wordpress-post-comments span.wordpress_comment {
+	    padding-right:0.7em;
+	}
+
+	#wordpress-post-comments div.wordpress_comment {
+	    margin:0;
+	    padding-left:1em;
+	    padding-right:0;
+	    padding-top:0.7em;
+	}
+
+	#wordpress-post-comments div.wordpress_comment .wordpress_comment_meta {
+	    font-size: 0.6em;
+			padding: 0.3em;
+	}
+
+	.wordpress-comments {
+	    padding-left: 1px;
+			padding-right:0;
+	    display: none;
+	}
+
+	#wordpress-post-comments div.wordpress_comment p {
+	    margin:0;
+	    padding-left:1em;
+			padding-right:0;
+	    width: 100%;
+	}
+
+#wordpress-post-comments img{
+	box-shadow:none ;
+	padding:0.5em;
+}
+
+
+/* wordpress Posts */
+
+div.wordpress_posts_meta{
+	margin-bottom: 0.5em;
+	font-style: italic;
+}
+
+.wordpress_posts_preview {
+	max-width: 100%;
+	display: inline-block;
+	vertical-align: top;
+	overflow:hidden;
+	max-height: 30%;
+}
+
+#contentArea .wordpress_posts h2 {
+	padding-top: 0.5em;
+  }
+  #contentArea .wordpress_posts h2 a {
+	  text-align: center;
+	  display: block;
+	}
+.wordpress_posts_author {
+	margin-right: 1.5em;
+}
+
+div.icon img{
+	margin: 0;
+	max-width: 100%;
+}
+
+.no_thumb .wordpress_posts_thumbnail{
+	display: none;
+}
+
+.has_thumb .wordpress_posts_thumbnail{
+	border: 0px;
+	border-radius: 5px;
+	display:block;
+	position: relative;
+	overflow: hidden;
+	margin-right: auto;
+	margin-left: auto;
+	border-radius: 10px;
+}
+
+.has_thumb .wordpress_posts_thumbnail img{
+	vertical-align: middle;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	max-height: 200px;
+}
+
+.no_thumb .wordpress_posts_preview{
+	width:100%;
+	position: relative;
+}
+
+.no_thumb .wordpress_posts_preview span{
+	position:absolute;
+	top:0;
+}
+
+.has_thumb .wordpress_posts_preview{
+	max-height:300px;
+	overflow:hidden;
+	position: relative;
+	border-radius: 5px;
+	font-size: 0.75em;
+}
+
+.has_thumb .wordpress_posts_preview span{
+	vertical-align: middle;
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	max-width:100%;
+	min-height:100%;
+}
+
+/*Social Menu*/
+
+div.icon, div.icon:hover, div.icon:focus{
+	box-shadow:none;
+}
+
+div.icon span a:link{
+	display: inline-block;
+	text-decoration: none;
+	font-style: oblique;
+	height: 45px;
+	width: 45px;
+	padding:0;
+	border-radius: 5px;
+	margin-bottom: 0.5em;
+}
+
+/* Responsive Design */
+
+@media only screen and (max-width: 800px) {
+ .wordpress_posts_author, #wordpress-post-comments {
+			margin-left: 1em;
+			display: block;
+	}
+
+	.wordpress_posts_date{
+		margin-left: 1em;
+		display:block;
+		font-size: 0.8em;
+	}
+} /* end of media max-width 800px */

@@ -5,67 +5,6 @@ html{
 }
 
 /*Generic classes*/
-
-.no_thumb .steem_posts_thumbnail{
-	display: none;
-}
-
-.has_thumb .steem_posts_thumbnail{
-border: 1px solid;
-border-radius: 5px;
-display:inline-block;
-padding-top: 20%;
-position: relative;
-width:30%;
-overflow: hidden;
-margin-right: 0.5em;
-border-radius: 10px;
-}
-
-.has_thumb .steem_posts_thumbnail img{
-vertical-align: middle;
-position:absolute;
-top:0;
-bottom:0;
-left:0;
-right:0;
-max-width:100%;
-min-height:100%;
-}
-
-.no_thumb .steem_posts_preview{
-	width:100%;
-	padding-top: 20%;
-	position: relative;
-}
-
-.no_thumb .steem_posts_preview span{
-	position:absolute;
-	top:0;
-}
-
-.has_thumb .steem_posts_preview{
-	display: inline-block;
-	width:66%;
-	max-height:300px;
-	overflow:hidden;
-	padding-top: 20%;
-	position: relative;
-	border-radius: 5px;
-	font-size: 0.75em;
-}
-
-.has_thumb .steem_posts_preview span{
-	vertical-align: middle;
-	position:absolute;
-	top:0;
-	bottom:0;
-	left:0;
-	right:0;
-	max-width:100%;
-	min-height:100%;
-}
-
 body{
 	width: 100%;
 	margin:0;
@@ -145,11 +84,11 @@ button#openNav{
 	margin-left: 1em;
 	position: fixed;
 	top:0.5em;
+	left: 0em;
 	border-radius: 5px;
 	padding-bottom: 0.2em;
 	opacity: 0.7;
 	border:none;
-	left: 0vw;
 }
 
 button#openNav:focus{ outline:0;}
@@ -319,162 +258,6 @@ button#closeNav{ outline:0;}
 	}
 
 
-	/* Steem Content Modules */
-
-	/* Steem Profile */
-
-	#profile-image img {
-		display:block;
-		margin: 0 auto;
-		max-width: 100%;
-		border-radius: 50%;
-		margin-bottom: 1em;
-	}
-
-	#steem_profile{
-		text-align: center;
-		font-size: 1em;
-	}
-
-	#steem_profile h1{ text-align: center;}
-
-	#profile-image {
-		vertical-align: middle;
-		margin-top: 15px;
-	}
-
-	#profile-about {
-		max-width: 50%;
-		margin-right:auto;
-		margin-left:auto;
-	}
-
-	#profile-info {
-		max-width: 70%;
-		margin-right:auto;
-		margin-left:auto;
-		margin-top: 1em;
-		margin-bottom: 1em;
-	}
-
-	#profile-info span{
-		margin-left: 1em;
-		margin-right: 1em;
-	}
-
-	.steemitboard {
-		width:100%;
-		margin-left:auto;
-		margin-right: auto;
-	}
-	.steemitboard img {
-		vertical-align: top;
-		box-shadow: none !important;
-	}
-
-	/* Steemit board badges (posts, comments, upvotes, rewards, replies, upvoted)*/
-	img.badgeTiny {
-		width: 50px;
-		height: 60px;
-	}
-	img.badgeSmall {
-		width: 60px;
-		height: 72px;
-	}
-	img.badgeMedium {
-		width: 75px;
-		height: 90px;
-	}
-	img.badgeLarge {
-		width: 90px;
-		height: 108px;
-	}
-
-	/* Square steemitboard badges (level, birthdays, steemfest, witness, daily, weekly and monthly author) */
-	img.badgeSqTiny {
-		width: 60px;
-		height: 60px;
-	}
-	img.badgeSqSmall {
-		width: 70px;
-		height: 70px;
-	}
-	img.badgeSqMedium {
-		width: 80px;
-		height: 80px;
-	}
-	img.badgeSqLarge {
-		width: 100px;
-		height: 100px;
-	}
-
-	/*Steem Post*/
-
-	 #steem-post img{
-		/* width: 90%; This makes small images like steemitboard badges display real ugly */
-		max-width: 90%;
-		border-radius: 0;
-		padding: 0;
-		margin: 0;
-		border: none;
-	}
-
-	/* steem post comments */
-	#steem-post-comments {
-		border-top: 1px solid;
-		padding: 0.7em;
-	}
-
-	#steem-post-comments span.steem_comment {
-	    padding-right:0.7em;
-	}
-
-	#steem-post-comments div.steem_comment {
-	    margin:0;
-	    padding-left:1em;
-	    padding-right:0;
-	    padding-top:0.7em;
-	}
-
-	#steem-post-comments div.steem_comment .steem_comment_meta {
-	    font-size: 0.6em;
-			padding: 0.3em;
-	}
-
-	.steem-comments {
-	    padding-left: 1px;
-			padding-right:0;
-	    display: none;
-	}
-
-	#steem-post-comments div.steem_comment p {
-	    margin:0;
-	    padding-left:1em;
-			padding-right:0;
-	    width: 100%;
-	}
-
-#steem-post-comments img{
-	box-shadow:none ;
-	padding:0.5em;
-}
-
-
-/* Steem Posts */
-
-div.steem_posts_meta{
-	margin-bottom: 0.5em;
-	font-style: italic;
-}
-
-.steem_posts_preview {
-	max-width: 100%;
-	display: inline-block;
-	vertical-align: top;
-	overflow:hidden;
-	max-height: 30%;
-}
-
 /*Social Menu*/
 
 	div.icon, div.icon:hover, div.icon:focus{
@@ -522,55 +305,8 @@ div.steem_posts_meta{
 		border-right: none;
 	}
 
- .steem_posts_author, #steem-post-comments {
-			margin-left: 1em;
-			display: block;
-	}
-
-	.steem_posts_date{
-		margin-left: 1em;
-		display:block;
-		font-size: 0.8em;
-	}
-
 	#leftpad{
 		padding-left:0 !important;
 		margin: 0;
-	}
-
-	/* Steemit board badges (posts, comments, upvotes, rewards, replies, upvoted)*/
-	img.badgeTiny {
-		width: 35px;
-		height: 42px;
-	}
-	img.badgeSmall {
-		width: 45px;
-		height: 54px;
-	}
-	img.badgeMedium {
-		width: 50px;
-		height: 60px;
-	}
-	img.badgeLarge {
-		width: 60px;
-		height: 72px;
-	}
-
-	/* Square steemitboard badges (level, birthdays, steemfest, witness, daily, weekly and monthly author) */
-	img.badgeSqTiny {
-		width: 40px;
-		height: 40px;
-	}
-	img.badgeSqSmall {
-		width: 50px;
-		height: 50px;
-	}
-	img.badgeSqMedium {
-		width: 60px;
-		height: 60px;
-	}
-	img.badgeSqLarge {
-		width: 70px;
-		height: 70px;
 	}
 } /* end of media max-width 800px */

@@ -558,3 +558,7 @@ function loadKIASpeaksTemplates() {
 	});
 }
 loadKIASpeaksTemplates();
+
+$.getScript( "lib/transit/jquery.transit.min.js", function( data, textStatus, jqxhr ) {
+	console.log( "jquery.transit.min.js load was performed." );
+});

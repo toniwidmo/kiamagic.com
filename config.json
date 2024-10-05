@@ -1,30 +1,62 @@
 {
-  "sitetitle": "Blockpress.me",
-  "tagline":"The API driven disembodied CMS",
-	"palette": "pistachiocream",
-  "theme": "metaverse",
+	"sitetitle": "NosePHP",
+	"tagline":"Get a Head with NosePHP!",
+	"palette": "cherrypie",
+	"theme": "metaverse",
 
 	"themeoptions": {
 		"banner_image": "",
 		"site_image": ""
 	},
 
-	"modules": ["html"],
+	"modules": ["html","markdown","text","wordpress"],
 
-	"firstpage": {"type": "html", "args": ["default/welcome_to_nosejs.html"]},
+	"firstpage": {"type": "html", "args": ["nosephp.html"]},
 
 	"menu": [
-    {"label": "Home", "type": "html", "args": "default/welcome_to_nosejs.html"}
-  ],
+		{"label": "NosePHP", "type": "html", "args": ["nosephp.html"]},
+		{"label": "Markdown", "type": "markdown", "args": ["markdown.md"]},
+		{"label": "Text", "type": "text", "args": ["markdown.md"]},
+		{"label": "WordPress", "type": "wordpress", "args": {"show":"posts", "tag":""}}
+	],
 
 	"socialmenu": {
-		"github": "https://github.com/widmoinc/nosejs/",
+		"github": "https://github.com/WidmoInc/nosephp",
 		"linkedin": "",
 		"twitter": "",
 		"facebook": "",
+		"reddit": "",
 		"stackoverflow": "",
-		"link_url": "https://widmoinc.github.io/nosejs/",
-		"email": ""
+		"email": "",
+		"mewe": "",
+		"bluesky": "",
+		"fediverse": "@toni@blahaj.zone",
+		"links": [{"url": "", "text": ""}]
+	},
+
+	"module_settings": {
+		"enigmagick": {
+			"api": "https://enigmagick.net/rest/"
+		},
+		"chaoshex": {
+			"enigmagick_api": "https://enigmagick.net/rest/"
+		},
+		"wordpress": {
+			"api": "https://public-api.wordpress.com/wp/v2/sites/nosephp.wordpress.com/",
+			"show_tags": true,
+			"show_category": false,
+			"page_size": 20,
+			"authors": {
+				"default": "Widmo Inc",
+				"256157171": "Toni"
+			}
+		}
+	},
+
+	"data_sources": {
+		"enigmagick": ["enigmagick_api", "https://enigmagick.net/rest/"],
+		"blahaj": ["rss", "https://blahaj.zone/@toni.rss"],
+		"wordpress": ["nosephp_wordpress", "https://public-api.wordpress.com/wp/v2/sites/nosephp.wordpress.com/"]
 	},
 
 	"dateformat": {"locale": "en-US", "options":{ "weekday": "long", "year": "numeric", "month": "long", "day": "numeric" }}

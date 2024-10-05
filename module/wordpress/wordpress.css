@@ -1,0 +1,136 @@
+/* WordPress Content Module Themes */
+
+/* WordPress Posts */
+
+.wordpress_posts{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	padding: 0.7em;
+}
+#contentArea .wordpress_posts h2 {
+	margin-left: 0.5em;
+	margin-bottom: 0em;
+}
+.wordpress_posts_preview {
+	max-width: 100%;
+	display: inline-block;
+	vertical-align: top;
+	overflow:hidden;
+	max-height: 30%;
+	border-radius: 5px;
+	font-size: 0.75em;
+}
+
+.wordpress_posts_meta {
+	font-size: 0.7em;
+	margin-left: 0.5em;
+	margin-bottom: 1.7em;
+	font-style: italic;
+}
+.wordpress_posts_author {
+	margin-right: 2em;
+}
+
+#contentArea {
+	font-size: 1.2em;
+}
+
+#contentArea img.wordpress_posts_thumbnail{
+	max-width: 20%;
+	max-height: 15%;
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.no_thumb .wordpress_posts_thumbnail{
+	display: none;
+}
+
+.has_thumb .wordpress_posts_thumbnail{
+	border: 1px solid;
+	display:inline-block;
+	padding-top: 20%;
+	position: relative;
+	width:30%;
+	overflow: hidden;
+	vertical-align: middle;
+	margin-right: 0.5em;
+	margin-bottom: 0.5em;
+	border-radius:10px;
+}
+
+.has_thumb .wordpress_posts_thumbnail img{
+	vertical-align: middle;
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	max-width:100%;
+	min-height:100%;
+}
+.no_thumb .wordpress_posts_preview{
+	width:100%;
+	position: relative;
+}
+
+.no_thumb .wordpress_posts_preview span{
+	position:absolute;
+	top:0;
+}
+
+.has_thumb .wordpress_posts_preview{
+	width:66%;
+	max-height:300px;
+	position: relative;
+}
+
+.has_thumb .wordpress_posts_preview span{
+	vertical-align: middle;
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	max-width:100%;
+	min-height:100%;
+}
+
+/* wordpress post comments */
+
+#wordpress-post-comments {
+	border-top: 1px solid #000;
+	padding: 0.7em;
+}
+#wordpress-post-comments span.wordpress_comment {
+    padding-right:0.7em;
+}
+#wordpress-post-comments div.wordpress_comment {
+    margin:0;
+    padding-left:1em;
+    padding-right:0;
+    padding-top:0.7em;
+}
+#wordpress-post-comments div.wordpress_comment .wordpress_comment_meta {
+    font-size: 0.6em;
+		padding:0.5em;
+}
+
+#wordpress-post-comments img{
+	box-shadow:none ;
+	padding:0.5em;
+	border:none;
+}
+
+.wordpress-comments {
+    padding-left: 1px;
+		padding-right:0;
+    display: none;
+}
+#wordpress-post-comments div.wordpress_comment p {
+    margin:0;
+    padding-left:1em;
+		padding-right:0;
+    width: 100%;
+}
+/* WordPress Posts */

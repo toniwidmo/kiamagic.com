@@ -1,3 +1,8 @@
+$.getScript( "lib/transit/jquery.transit.min.js", function( data, textStatus, jqxhr ) {
+	console.log( "jquery.transit.min.js load was performed." );
+});
+
+
 $('#openNav').click(function() {
   $("#sidebar").transition({ x: '+=300px', delay: 200});
   $("#leftpad").transition({'padding-left': "300px",delay: 200},400, 'ease');
